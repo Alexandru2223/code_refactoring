@@ -1,9 +1,7 @@
 package service;
 
 import model.Item;
-
 import java.util.List;
-
 
 public class GildedRose {
 
@@ -83,7 +81,6 @@ public class GildedRose {
     private void decreaseSellIn(Item item) {
         item.setSellIn(item.getSellIn() - 1);
     }
-
 
     private void dropQualityToZero(Item item) {
         if (checkSellDateHasPassed(item)) {
